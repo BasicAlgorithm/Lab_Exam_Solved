@@ -9,6 +9,10 @@ Perro::Perro(char nombre)
 	nombreperro = nombre;
 }
 
+Perro::Perro()
+{
+	nombreperro = 'A';
+}
 
 Perro::~Perro()
 {
@@ -20,7 +24,7 @@ void Perro::cuantaspatastengo()
 	cout << "tengo 4 patas!" << endl;
 }
 
-void Perro::hablar(char p)
+void Perro::hablar()
 {
-	cout << "guau! guau!" << p<<  endl;
+	cout << "TENGO " << nrPatas<<" PATAS DE PERRO"<<  endl;
 }

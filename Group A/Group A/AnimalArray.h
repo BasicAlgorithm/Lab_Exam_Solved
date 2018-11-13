@@ -6,14 +6,14 @@
 #ifndef ANIMAL_ARR_H
 #define ANIMAL_ARR_H
 
-
+template <typename T>
 class AnimalArray
 {
 	int size;
-	Animal *ada;
+	T *ada;
 public:
 	AnimalArray();
-	AnimalArray(Animal newada[], int newsize);
+	AnimalArray(T*, int);
 	AnimalArray(AnimalArray &o);
 	
 	~AnimalArray();
@@ -21,8 +21,8 @@ public:
 	void resize(int);
 	void print();
 	void clear();
-	void insert(int, Animal);
-	void push_back(Animal);
+	void insert(int, T);
+	void push_back(T);
 	void remove(int);
 };
 
