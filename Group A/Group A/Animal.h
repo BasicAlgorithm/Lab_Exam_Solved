@@ -6,8 +6,9 @@ using namespace std;
 
 class Animal
 {
+protected:
 	string nombre;
-	int nrPatas;
+	int nrPatas = 99;
 
 public:
 	
@@ -22,10 +23,4 @@ public:
 };
 #endif // ANIMAL_H
 
-//#include <iostream>
-//#ifndef ANIMAL_H
-//#define ANIMAL_H
-//#include <string>
 
-
-//#endif // ANIMAL_H
