@@ -28,3 +28,4 @@ void Perro::hablar()
 {
 	cout << "TENGO " << nrPatas<<" PATAS DE PERRO"<<  endl;
 }
+

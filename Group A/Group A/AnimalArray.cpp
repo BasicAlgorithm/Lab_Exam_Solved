@@ -1,17 +1,17 @@
 #include "pch.h"
 #include "AnimalArray.h"
-#include "Animal.h"
+//#include "Animal.h"
 #include <iostream>
 
 template <typename T>
 AnimalArray<T>::AnimalArray() 
 {
-	this->size = 0;
+	this->size = 1;
 	ada = new T[size];
 }
 
 template <typename T>
-AnimalArray<T>::AnimalArray (T* newada, int newsize) 
+AnimalArray<T>::AnimalArray (T newada[], int newsize) 
 {
 	this->size = newsize;
 	ada = new T[size];
@@ -83,3 +83,4 @@ void AnimalArray<T>::print() {
 	for (int y = 0; y < size; y++)
 		ada[y].hacerhablar();
 }
+
