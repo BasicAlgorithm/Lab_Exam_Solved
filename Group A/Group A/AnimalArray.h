@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "Animal.h"
+#include "Perro.h"
 
 #ifndef ANIMAL_ARR_H
 #define ANIMAL_ARR_H
@@ -13,7 +14,7 @@ class AnimalArray
 	T *ada;
 public:
 	AnimalArray();
-	AnimalArray(T*, int);
+	AnimalArray(T[], int);
 	AnimalArray(AnimalArray &o);
 	
 	~AnimalArray();
